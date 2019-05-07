@@ -1,0 +1,192 @@
+% Turabian Formatting for Research Papers Template, 2018/08/06
+%
+% Developed using the turabian-formatting package (2018/08/01), available through CTAN: http://www.ctan.org/pkg/turabian-formatting
+%
+% Additional document class formatting options:
+%
+% raggedright: ragged right formatting without hyphenations
+% authordate: support for the author-date citation style
+% endnotes: support for endnotes
+
+
+
+\documentclass{turabian-researchpaper}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes, ellipsis}
+\usepackage{gb4e}
+\let\eachwordone=\itshape
+\noautomath
+
+% Specify paper size with geometry package
+\usepackage[pass, letterpaper]{geometry}
+
+% For citations, use the biblatex-chicago package
+\usepackage{biblatex-chicago}
+\usepackage{ulem}
+\addbibresource{works-cited.bib}
+
+% Information for title page
+\title{Turabian-formatted Research Paper}
+\subtitle{A Template based on Turabian's \emph{A Manual for Writers}, 9th edition}
+\author{Abi Hunter}
+\course{In partial satisfaction of the requirements for honors in the Bachelor of Arts in Linguistics program at the University of Chicago}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Introduction}
+
+The study of ellipsis is a compelling area of linguistic research for many reasons. It has a strong bearing on universal grammar, and insights into ellipsis can be extremely informative about the interface between form and meaning, since ellipsis is meaning with the absence of form. One specific form of ellipsis, and a subject of extensive academic study, is sluicing. Ross (1969) describes sluicing as the linguistic process that allows sentences like (\ref{introexample1}) to be converted into sentences of type (\ref{introexample2}). 
+
+\begin{exe}
+\ex\label{introexample1} Somebody is teaching syntax this quarter---guess who is teaching syntax. 
+\ex\label{introexample2} Somebody is teaching syntax this quarter---guess who. 
+\end{exe} 
+
+In (\ref{introexample2}), the portion ``is teaching syntax'' in ``guess who [is teaching syntax]'' can be deleted and still be implicitly understood. Such constructions, where material is deleted from an embedded question, leaving only the question phrase (wh- phrases in English, qu- in French, hv- in Icelandic, etc.), are possible in a multitude of languages and with a variety of constructions (Merchant 2001).  Before proceeding, it will be necessary to clarify some elements of terminology. Here, I will refer to the remaining wh-phrase (or its equivalent in cross-linguistic examples) as the remnant, and the deleted material as the ellipsis site. The antecedent refers to the portion ``somebody is teaching syntax this quarter'' in the above example. It is the part that provides the meaning understood at the ellipsis site. The part under question, i.e. ``somebody'', is the correlate. Together the correlate and the ellipsis site form the sluice. 
+
+\section{Literature Review}
+The contemporary discussion about sluicing (Merchant 2001; Chung, Ladusaw and McCloskey 1995; Chomsky 1972; Barros 2014, to name but a few) has condensed around three major questions: 
+\begin{exe}
+\ex\label{bigquestions} 
+\begin{xlist}
+\ex Is there contextually variable syntactic structure at the ellipsis site? 
+\ex Is the identity condition on ellipsis syntactic? 
+\ex Is sluicing fed by regular wh-movement? 
+\end{xlist}
+\end{exe}
+
+\noindent Here, the first question raises that of whether a full-fledged syntactic structure exists and is then deleted, or whether the pronounced remnant (the wh-phrase) is created via some other mechanism. For example, some alternate proposals involve case-copying of the correlate (Chomsky \& Lasnik 1993, Manetta 2013). 
+The identity condition on sluicing is the question of whether some kind of semantic, pragmatic, or syntactic structure must be identical between antecedent and ellipsis site. If so, in which of these domains is there an enforced identical structure (an ``identity condition'') and how is it specified?  The second question asks whether, given that syntactic structure in particular exists in the ellipsis site, it is necessarily identical to the structure in the antecedent? Finally, the third question asks whether remnants come from the same process that moves wh-phrases in ordinary questions like in (4), and whether, by extension, only constituents that may be moved in this manner can serve as acceptable remnants.  
+
+\begin{exe}
+\ex\label{whichsubfield}
+\begin{xlist}
+\ex They are teaching which subfield this term? 
+\ex They are teaching which subfield this term? 
+\end{xlist}
+\end{exe}
+
+The question of variable syntactic structure at the ellipsis site is one that Ross addressed in his original paper and is tightly connected to the question of identity: after all, there cannot be enforced syntactic identity at the ellipsis site if there is no structure whatsoever. However, if one chooses not to argue for enforced syntactic identity at the ellipsis site, then it becomes a less trivial problem to prove that some kind of structure exists at the ellipsis site. 
+
+My focus in this paper is a two-pronged approach to the identity condition on sluicing. 
+Firstly, I discuss Abels? (2017) proposed fit condition and its advantages, along with a few problems that may challenge its robustness. Then, I discuss a head-based syntactic identity condition proposed by Rudin (2017), including his failure to eliminate certain ungrammatical structures. I explain why supplementing Rudin?s account with Abels? proposal remediates this problem in Rudin. I then turn my attention to copular sluices. I argue that by using the semantic equivalent of Rudin?s proposed syntactic identity condition, we can identify a semantic condition licensing copular slucies. In this paper I focus on the mechanisms that predict sluices to be grammatical or ungrammatical, with the hope of making novel predictions.  
+
+\subsection{Abels: On the interaction of P-stranding and Sluicing in Bulgarian} 
+
+Abels (2017) uses novel Bulgarian data to argue that there must be structure at the ellipsis site but that it cannot be obligatorily identical to the antecedent. To understand why these examples are significant, Abels introduces a few points about Bulgarian grammar. Firstly, that Bulgarian grammar has lost much of the case distinction present in its sister Slavic languages. However, case distinction is still present in pronouns, where there is a general form (\textsc{g}), which can be used anywhere; and a non-subject form (\textsc{non-s}) which can only be used as an object of verbs or prepositions. In using these examples, Abels both argues against the prevailing no-syntax and syntactic identity accounts and argues for an account that focuses on the relationship between structure at the correlate and the remnant, positing that there must be structure at the ellipsis site but that it cannot be obligatorily identical to the structure at the correlate. Abels argues that the condition on acceptability of sluices must be somehow mediate between enforcing identity and making sure to eliminate grammatically unacceptable sluices. 
+To build his argument, first, he shows an example that makes a case against syntactic identity: 
+\begin{exe}
+\ex\label{ivandanced1}
+\gll Ivan tancuva \{s njakoi \textbar s njakogo\}, no ne znam koi. \\
+Ivan danced with someone.G with someone.NON-S but NEG know who.G \\
+\trans `Ivan danced with someone but I don't know who.'
+\end{exe}
+
+Since preposition stranding is disallowed in Bulgarian, this sluice would have to be derived from the ill-formed pre-sluice in (\ref{ivandanced1}).
+
+\begin{exe}
+\ex\label{ivandanced2}
+\gll *Koi tancuva \{s \underline{\hspace{1cm}} Ivan \textbar Ivan s \underline{\hspace{1cm}} \}? \\
+Who.\textsc{g} dance with \hspace{1cm} Ivan Ivan with \\
+\trans `Who did Ivan dance with?'
+\end{exe}
+
+The grammaticality of (\ref{ivandanced1}) makes a strong case against enforced syntactic identity between antecedent and ellipsis site, since under such an identity condition, in (\ref{ivandanced1}), the ellipsis site would originally have the same structure as the antecedent and koi would have to undergo wh-movement, leaving the preposition stranded. Such a pre-ellipsis site would resemble (\ref{ivandanced2}). This would make the pre-ellipsis site ungrammatical and imply some kind of unspecified repair mechanism for preposition-stranding in languages that do not otherwise allow it. Instead, the ellipsis site can be said to look something like this. 
+
+\begin{exe}
+\ex\label{ivandanced3}
+\gll Ivan tancuva \{s njakoi \textbar s njakogo\}, no ne znam koi beshe tova. 
+ \\ Ivan danced with someone.\textsc{g} with someone.\textsc{non-s} but \textsc{not} know who.\textsc{g} was that. \\
+ \trans `Ivan danced with someone but I don?t know who that was.'
+\end{exe}
+
+Abels uses another example from Bulgarian to similarly argue against the no-syntax theory of ellipsis. 
+
+\begin{exe}
+\ex [*]
+{ \label{ivandanced4} \gll Ivan tancuva \{s njakoi \textbar s njakogo\}, no ne znam kogo. \\ 
+Ivan danced with someone.G with someone.\textsc{non-s}  but \textsc{not} know who.\textsc{non-s}\\ }
+\end{exe}
+
+\noindent The alleged pre-sluice here would have to be the following: 
+
+\begin{exe}
+\ex [*]
+{ \label{ivandanced5} \gll Ivan tancuva \{s njakoi \textbar s njakogo\}, no ne znam kogo beshe tova. \\ 
+Ivan danced with someone.\textsc{g} with someone.\textsc{non-s}  but \textsc{neg} know who.\textsc{non-s} was that\\ }
+\end{exe}
+
+Since the general case form of ``who'' is disallowed in the pre-sluice, it makes sense that (\ref{ivandanced2}) would be disallowed under accounts that posit some syntactic structure at the ellipsis site. However, the contrast between the acceptability of (\ref{ivandanced5}) and (\ref{ivandanced1}) makes little sense under case-copying and other no-syntax accounts. If there is no syntax present at the ellipsis site, then both the general form (\ref{ivandanced1}) and non-subject form (\ref{ivandanced5}) should be permitted as remnants, as they are for correlates, but only the general form is actually acceptable. If there is syntactic identity present, then, again, both forms permitted as correlates should be permitted as remnants, since the matching syntactic structures should assign them the same case. 
+
+Abels uses these two points---the fact that the data both supports the conclusion that there is syntactic structure at the ellipsis site as well as the simultaneous conclusion that there is no enforced identity between the antecedent and that syntactic structure---to argue for the following ``fit'' condition.  
+
+\begin{exe}
+\ex\label{fitcond} Fit condition: Modulo agreement in the antecedent and wh-movement, replacing the correlate by the remnant in the antecedent must lead to a syntactically well-formed structure with the right meaning or?for sprouting?adding the correlate into the antecedent and making no further changes must lead to a syntactically well-formed structure with the intended thematic interpretation. 
+\end{exe}
+
+Here, ``sprouting'' refers to sluices where there is no overt correlate. 
+
+\begin{exe}
+\ex
+\begin{xlist}
+\ex\label{sprout1} Sara was baking, but I don't know what \sout{\textless Sara was baking\textgreater}.
+\ex\label{sprout2} Sara was baking something, but I don't know what \sout{\textless Sara was baking\textgreater}.
+\end{xlist}
+\end{exe} 
+
+Both of these examples are acceptable in English, however, no correlate is present in (\ref{sprout1}). The fit condition thus needs the stipulation that adding the correlate into the antecedent must lead to a well-formed structure, because there is, after all, nothing to replace. 
+
+\begin{exe}
+\ex\label{sprout3} Sara was baking \textbf{what}? 
+\end{exe}
+
+Here, the structure used to evaluate fit is the same for both (\ref{sprout1}) and (\ref{sprout2}), where what either replaces something as in (\ref{sprout3}) or is added with no further changes, as Abels describes. 
+
+Contrast with:
+\begin{exe}
+\ex\label{maryisproud} Mary is proud but she won't tell us...
+\begin{xlist}
+\ex[*] {who.}
+\ex of who.
+\end{xlist}
+\end{exe}
+
+Under fit, (\ref{ivandanced1}) is predicted to be grammatical because the remnant \textit{koi} can be slotted into the sentence in place of the antecedent to give a grammatical sentence. 
+
+\begin{exe}
+\ex\label{ivandanced6}
+\gll Ivan tancuva s      koi? \\ 
+ Ivan danced   with who.\textsc{g}? \\
+ \end{exe}
+ 
+Because fit enforces some structure at the ellipsis site, it makes sense that a sentence without a recoverable grammatical pre-sluice would be unacceptable, whereas the no-syntax account leaves this as an open question. Whether we are prepared to accept fit at this point, it is relatively clear that the no-syntax account cannot fully account for what we see in Bulgarian. The question of syntactic identity is, perhaps, more open. Some may suggest that any syntactic identity condition on sluicing is exempt from having to explain copulative structures like those found in (\ref{ivandanced3}).
+
+Great thoughts that further your argument. This includes lots of strong evidence presented throughout several paragraphs, each accompanied by necessary citations.
+\begin{quotation}
+    \noindent Here is a block quotation---a passage from a text you found insightful and wanted to share with others. Maybe it is from a journal article, website, or book. Irrespective, it should support the argument being made.\footnote{A citation for the quoted material.}
+\end{quotation}
+Maybe a sentence or two that bring the argument and evidence together.\autocite[34]{example_source}
+
+
+
+\section{Another Insightful Section}
+
+More ideas that really make this a great paper. Maybe a footnote or two.\footnote{Some peripheral thoughts that belong in a note.}
+
+
+\section{Conclusions}
+
+At this point, you've changed everything (including your marks!). Time to wrap up!
+
+
+\clearpage
+\printbibliography
+
+\end{document}
