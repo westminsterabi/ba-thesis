@@ -23,9 +23,11 @@
 \usepackage[pass, letterpaper]{geometry}
 
 % For citations, use the biblatex-chicago package
-\usepackage{biblatex-chicago}
+\usepackage{natbib}
+\bibliographystyle{humannat}
 \usepackage{ulem}
-\addbibresource{works-cited.bib}
+\usepackage[icelandic]{babel}
+\usepackage[T1]{fontenc}
 
 % Information for title page
 \title{Turabian-formatted Research Paper}
@@ -128,7 +130,7 @@ Since the general case form of ``who'' is disallowed in the pre-sluice, it makes
 Abels uses these two points---the fact that the data both supports the conclusion that there is syntactic structure at the ellipsis site as well as the simultaneous conclusion that there is no enforced identity between the antecedent and that syntactic structure---to argue for the following ``fit'' condition.  
 
 \begin{exe}
-\ex\label{fitcond} Fit condition: Modulo agreement in the antecedent and wh-movement, replacing the correlate by the remnant in the antecedent must lead to a syntactically well-formed structure with the right meaning or?for sprouting?adding the correlate into the antecedent and making no further changes must lead to a syntactically well-formed structure with the intended thematic interpretation. 
+\ex\label{fitcond} Fit condition: Modulo agreement in the antecedent and wh-movement, replacing the correlate by the remnant in the antecedent must lead to a syntactically well-formed structure with the right meaning or---for sprouting---adding the correlate into the antecedent and making no further changes must lead to a syntactically well-formed structure with the intended thematic interpretation. 
 \end{exe}
 
 Here, ``sprouting'' refers to sluices where there is no overt correlate. 
@@ -166,27 +168,144 @@ Under fit, (\ref{ivandanced1}) is predicted to be grammatical because the remnan
  Ivan danced   with who.\textsc{g}? \\
  \end{exe}
  
-Because fit enforces some structure at the ellipsis site, it makes sense that a sentence without a recoverable grammatical pre-sluice would be unacceptable, whereas the no-syntax account leaves this as an open question. Whether we are prepared to accept fit at this point, it is relatively clear that the no-syntax account cannot fully account for what we see in Bulgarian. The question of syntactic identity is, perhaps, more open. Some may suggest that any syntactic identity condition on sluicing is exempt from having to explain copulative structures like those found in (\ref{ivandanced3}).
+Because fit enforces some structure at the ellipsis site, it makes sense that a sentence without a recoverable grammatical pre-sluice would be unacceptable, whereas the no-syntax account leaves this as an open question. Whether we are prepared to accept fit at this point, it is relatively clear that the no-syntax account cannot fully account for what we see in Bulgarian. The question of syntactic identity is, perhaps, more open. Some may suggest that any syntactic identity condition on sluicing is exempt from having to explain copulative structures like those found in (\ref{ivandanced3}). Merchant (1999) dubs these structures \textit{psuedo-sluices}. This raises the question of where pseudo-sluices may be prohibited. Perhaps we can repair any malformed sluicing structure by substituting the ellipsis site with a copular clause, leading to no change on the surface structure, but still rendering sluices with ungrammatical ellipsis sites acceptable. 
 
-Great thoughts that further your argument. This includes lots of strong evidence presented throughout several paragraphs, each accompanied by necessary citations.
-\begin{quotation}
-    \noindent Here is a block quotation---a passage from a text you found insightful and wanted to share with others. Maybe it is from a journal article, website, or book. Irrespective, it should support the argument being made.\footnote{A citation for the quoted material.}
-\end{quotation}
-Maybe a sentence or two that bring the argument and evidence together.\autocite[34]{example_source}
+Further data from Abels dealing with so-called contrast sluices makes problems with the no-syntax account even starker. Abels observes that Bulgarian, like English, permits contrast sluices where the remnant deals with an alternative to the correlate instead of its identity. 
+\begin{exe}
+\ex\label{ivanleft1}
+\gll Ivan tragna, no ne znam koi oshte.  \\
+Ivan left, but \textsc{neg} know.1st.\textsc{sg} who else \\
+\trans `Ivan left, but I don't know who else'
+\end{exe}
+
+\noindent A copular structure is disallowed here. 
+
+\begin{exe} 
+\ex
+\begin{xlist} 
+\ex[*] {\label{ivanleft2} \gll Ivan tragna, no ne znam koi oshte beshe tova. \\ 
+Ivan left, but \textsc{neg} know.1st.\textsc{sg} who else was that. \\
+\trans{`*Ivan left, but I don't know who else it is'}}
+\ex {\label{ivanleft3} \gll Ivan tragna, no ne znam koi oshte tragna. \\ 
+Ivan left, but \textsc{neg} know.1st.\textsc{sg} who else left. \\
+\trans{`Ivan left, but I don't know who else left'}}
+\end{xlist}
+\end{exe}
+
+The key is that for contrast sluices where a preposition is strictly required on the indirect object of a verb, the preposition must accompany the pronoun no matter which form is used. 
+
+\begin{exe}
+\ex\label{ivanleft4}
+\gll Ivan tancuva s Maria, no ne  znam *(s) \{koi \textbar kogo\} oshte. \\
+Ivan danced  with Marie, but \textsc{neg} know.1st.\textsc{sg} with who.\textsc{g} who.\textsc{non-s} else. \\
+\trans `Ivan danced with Maria, but I don?t know with who else.'
+\end{exe}
+
+
+Here, the preposition is obligatorily pied-piped, and the copular completion is not available. Under no-syntax accounts this is mysterious, because the possible grammatical structures at the ellipsis site should not influence the acceptability of a sluice. After all, there is no structure. 
+
+\subsubsection{A problematic example from Icelandic?}
+Abels? argument, given the Bulgarian data, is very compelling. There is however one English example that proves problematic for him: 
+
+\begin{exe}
+\ex\label{monks1}
+For monks in this monastery, it is possible in principle to sing, but the abbot has to specify which monks \sout{\textless can sing\textgreater}.
+\end{exe}
+
+There is no overt correlate here within the actual antecedent, which is the clause ``it is possible in principle to sing''. Here, no portion of the structure matches \textit{which monks}. Based on fit, it is also not a licit example of sprouting. Adding the remnant into the antecedent and making no further changes results in a completely ungrammatical structure, seen in (\ref{monks2}. Contrast this with well-formed fragment questions such as (\ref{ivandanced6}). 
+
+\begin{exe}
+\ex[*]{\label{monks2}
+For monks in this monastery, it is possible in principle \textit{which monks} to sing?}
+\end{exe}
+
+Abels (p.c.) indicated that it may be possible to substitute ``For monks in this monastery'' with ``For which monks'', but also noted that this may be more difficult to reconcile in a case-rich language. 
+
+\begin{exe}
+\ex\label{monks3}
+For which monks in this monastery? 
+\end{exe}
+
+If which monks is case-marked in a language in a way that is incompatible with the preposition for, substituting which monks as in (\ref{monks3}) will not work, and the fit condition may cause acceptable sluices to crash. We can attempt this in a few case-heavy languages to see the results, and whether or not this causes serious issues for the fit condition. First, we examine German, a case-marked language that inflects nouns, adjectives, articles, and pronouns in four cases and three genders. Verbs are also inflected for number and person. 
+
+\begin{exe}
+\ex\label{monksgr1}
+\gll F\"ur M\"onche in diesem Kloster ist es im Prinzip m\"oglich  zu singen, aber der Abt muss spezifizieren welche M\"onche singen k\"onnen. \\
+For monks.\textsc{pl.acc} in this.\textsc{dat} monastery.\textsc{dat} is it in principle.\textsc{dat} possible to  sing but the Abbot must  specify which.\textsc{pl.nom} monks.\textsc{nom} sing can. \\
+\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify 
+which monks can sing'
+\end{exe}
+
+Here we have the German equivalent of (\ref{monks1}). The remnant which monks is inflected in nominative case, whereas the correlate monks is inflected in accusative. However, the accusative and nominative forms of both \textit{welche} and \textit{M\"onche} are syncretic. The fit condition thus predicts that the sluice will be licit, because replacing the correlate with the remnant results in a well-formed fragment question with proper case markings. 
+
+\begin{exe}
+\ex\label{monksgr2}
+\gll F\"ur welche M\"onche in diesem Kloster? \\
+For which.\textsc{pl.acc/nom} monks.\textsc{pl.acc/nom} in this.\textsc{dat} monastery.\textsc{acc/nom/dat} i\\
+\trans `for which monks in this monastery?'
+\end{exe}
+
+Based on (\ref{monksgr2}), the sluiced version should be licit, and we find that it is. 
+
+\begin{exe}
+\ex\label{monksgr3}
+\gll F\"ur M\"onche in diesem Kloster ist es im Prinzip m\"oglich  zu singen, aber der Abt muss spezifizieren welche M\"onche . \\
+For monks.\textsc{pl.acc} in this.\textsc{dat} monastery.\textsc{dat} is it in principle.\textsc{dat} possible to  sing but the Abbot must  specify which.\textsc{pl.nom} monks.\textsc{nom} \\
+\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify 
+which monks'
+\end{exe}
+
+\noindent The problem here is that the case syncretism seems to be a mere accident working in the fit condition?s favor. There may be a language where the case assigned by the preposition for, or the equivalent in the construction for monks in this monastery, is morphologically incompatible with the case assigned by the modal verb in which monks may sing. If so, the equivalent of this sluice in that language would be predicted illicit by the fit condition. If it is indeed grammatical, we need to revise our analysis. 
+
+To check if this could be the case , we examine Icelandic, a heavily case-marked language. Icelandic declines for number, gender, and case, of which there are four: nominative, accusative, dative, and genitive. Pronouns, specifiers, adjectives, nouns, and numbers one through four all decline. Verbs conjugate in person and number. Glossing specifies where case morphology is present, as well as number and gender where unclear from context. The definite article in Icelandic is postfix, and this has been indicated as well. There is no indefinite article in Icelandic. 
+
+\begin{exe}
+\ex\label{monksis1}
+\gll \TH a{\dh} er \'i  grunninn h\ae gt fyrir munkana \'i klaustrinu a{\dh} syngja, en \'ab\'otinn ver\dh ur a{\dh} tilgreina \{hverjir \textbar hva\dh a munkar\} . \\
+It is in principle possible for monks.\textsc{acc.the}  in monastery.\textsc{dat.the}  to   sing         but  abbot.\textsc{nom.the} must    to  specify   which.\textsc{nom.pl.m} which.\textsc{nom.m} monks.\textsc{nom}.\\ 
+\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify which monks.'
+\end{exe}
+
+This example emulates the structure of the pre-sluice in (\ref{monks1}), but in Icelandic, ``monks'' takes accusative case in the antecedent, assigned by the preposition \textit{fyrir} (for), and at the pre-ellipsis site, monks is assigned nominative by the modal verb \textit{mega}. If the sluiced version is grammatical, this looks like a disaster waiting to happen for the fit condition, since to satisfy the fit condition we will be forced to fit a nominative remnant into a place meant for the accusative correlate. The sluiced version is indeed grammatical. 
+
+\begin{exe}
+\ex\label{monksis2}
+\gll \TH a{\dh} er \'i  grunninn h\ae gt fyrir munkana \'i klaustrinu a{\dh} syngja, en \'ab\'otinn ver\dh ur a{\dh} tilgreina hva\dh a munkar mega syngja. \\
+It is in principle possible for monks.\textsc{acc.the}  in monastery.\textsc{dat.the}  to   sing         but  abbot.\textsc{nom.the} must    to  specify   which.\textsc{nom.m} monks.\textsc{nom} may  sing.\\ 
+\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify which monks may sing'
+\end{exe}
+
+Given this grammatical sluice, we can try fitting the remnant in the place of the correlate. 
+
+\begin{exe}
+\ex\label{monksis3}
+\gll \TH a{\dh} er \'i  grunninn h\ae gt fyrir \{hverjir \textbar hva\dh a munkar\} \'i klaustrinu a{\dh} syngja? \\
+It is in principle possible for which\textsc{nom.pl.m} which monks.\textsc{nom}  in monastery.\textsc{dat.the}  to   sing? \\ 
+\trans Intended: `For which monks in this monastery, it is possible in principle to sing?'
+\end{exe}
+
+Neither of these remnants can licitly replace the correlate, which appears to raise a problem for the fit condition. 
+
+\subsection{Rudin: Head-Based Syntactic Identity in Sluicing}
+%Great thoughts that further your argument. This includes lots of strong evidence presented throughout several paragraphs, each accompanied by necessary citations.
+%\begin{quotation}
+ %   \noindent Here is a block quotation---a passage from a text you found insightful and wanted to share with others. Maybe it is from a journal article, website, or book. Irrespective, it should support the argument being made.\footnote{A citation for the quoted material.}
+%\end{quotation}
+%Maybe a sentence or two that bring the argument and evidence together.\autocite[34]{example_source}
 
 
 
-\section{Another Insightful Section}
+%\section{Another Insightful Section}
 
-More ideas that really make this a great paper. Maybe a footnote or two.\footnote{Some peripheral thoughts that belong in a note.}
+%More ideas that really make this a great paper. Maybe a footnote or two.\footnote{Some peripheral thoughts that belong in a note.}
 
 
-\section{Conclusions}
+%\section{Conclusions}
 
-At this point, you've changed everything (including your marks!). Time to wrap up!
+%At this point, you've changed everything (including your marks!). Time to wrap up!
 
 
 \clearpage
-\printbibliography
+% \printbibliography
 
 \end{document}
