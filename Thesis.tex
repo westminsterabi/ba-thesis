@@ -18,6 +18,8 @@
 \usepackage{gb4e}
 \let\eachwordone=\itshape
 \noautomath
+\setcounter{secnumdepth}{4}
+\usepackage[shortlabels]{enumitem}
 
 % Specify paper size with geometry package
 \usepackage[pass, letterpaper]{geometry}
@@ -78,7 +80,7 @@ The identity condition on sluicing is the question of whether some kind of seman
 The question of variable syntactic structure at the ellipsis site is one that Ross addressed in his original paper and is tightly connected to the question of identity: after all, there cannot be enforced syntactic identity at the ellipsis site if there is no structure whatsoever. However, if one chooses not to argue for enforced syntactic identity at the ellipsis site, then it becomes a less trivial problem to prove that some kind of structure exists at the ellipsis site. 
 
 My focus in this paper is a two-pronged approach to the identity condition on sluicing. 
-Firstly, I discuss Abels? (2017) proposed fit condition and its advantages, along with a few problems that may challenge its robustness. Then, I discuss a head-based syntactic identity condition proposed by Rudin (2017), including his failure to eliminate certain ungrammatical structures. I explain why supplementing Rudin?s account with Abels? proposal remediates this problem in Rudin. I then turn my attention to copular sluices. I argue that by using the semantic equivalent of Rudin?s proposed syntactic identity condition, we can identify a semantic condition licensing copular slucies. In this paper I focus on the mechanisms that predict sluices to be grammatical or ungrammatical, with the hope of making novel predictions.  
+Firstly, I discuss Abels' (2017) proposed fit condition and its advantages, along with a few problems that may challenge its robustness. Then, I discuss a head-based syntactic identity condition proposed by Rudin (2017), including his failure to eliminate certain ungrammatical structures. I explain why supplementing Rudin's account with Abels' proposal remediates this problem in Rudin. I then turn my attention to copular sluices. I argue that by using the semantic equivalent of Rudin's proposed syntactic identity condition, we can identify a semantic condition licensing copular slucies. In this paper I focus on the mechanisms that predict sluices to be grammatical or ungrammatical, with the hope of making novel predictions.  
 
 \subsection{Abels: On the interaction of P-stranding and Sluicing in Bulgarian} 
 
@@ -198,14 +200,14 @@ The key is that for contrast sluices where a preposition is strictly required on
 \ex\label{ivanleft4}
 \gll Ivan tancuva s Maria, no ne  znam *(s) \{koi \textbar kogo\} oshte. \\
 Ivan danced  with Marie, but \textsc{neg} know.1st.\textsc{sg} with who.\textsc{g} who.\textsc{non-s} else. \\
-\trans `Ivan danced with Maria, but I don?t know with who else.'
+\trans `Ivan danced with Maria, but I don't know with who else.'
 \end{exe}
 
 
 Here, the preposition is obligatorily pied-piped, and the copular completion is not available. Under no-syntax accounts this is mysterious, because the possible grammatical structures at the ellipsis site should not influence the acceptability of a sluice. After all, there is no structure. 
 
 \subsubsection{A problematic example from Icelandic?}
-Abels? argument, given the Bulgarian data, is very compelling. There is however one English example that proves problematic for him: 
+Abels' argument, given the Bulgarian data, is very compelling. There is however one English example that proves problematic for him: 
 
 \begin{exe}
 \ex\label{monks1}
@@ -232,7 +234,7 @@ If which monks is case-marked in a language in a way that is incompatible with t
 \ex\label{monksgr1}
 \gll F\"ur M\"onche in diesem Kloster ist es im Prinzip m\"oglich  zu singen, aber der Abt muss spezifizieren welche M\"onche singen k\"onnen. \\
 For monks.\textsc{pl.acc} in this.\textsc{dat} monastery.\textsc{dat} is it in principle.\textsc{dat} possible to  sing but the Abbot must  specify which.\textsc{pl.nom} monks.\textsc{nom} sing can. \\
-\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify 
+\trans `For monks in this monastery it's possible in principle to sing, but the abbot must specify 
 which monks can sing'
 \end{exe}
 
@@ -251,11 +253,11 @@ Based on (\ref{monksgr2}), the sluiced version should be licit, and we find that
 \ex\label{monksgr3}
 \gll F\"ur M\"onche in diesem Kloster ist es im Prinzip m\"oglich  zu singen, aber der Abt muss spezifizieren welche M\"onche . \\
 For monks.\textsc{pl.acc} in this.\textsc{dat} monastery.\textsc{dat} is it in principle.\textsc{dat} possible to  sing but the Abbot must  specify which.\textsc{pl.nom} monks.\textsc{nom} \\
-\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify 
+\trans `For monks in this monastery it's possible in principle to sing, but the abbot must specify 
 which monks'
 \end{exe}
 
-\noindent The problem here is that the case syncretism seems to be a mere accident working in the fit condition?s favor. There may be a language where the case assigned by the preposition for, or the equivalent in the construction for monks in this monastery, is morphologically incompatible with the case assigned by the modal verb in which monks may sing. If so, the equivalent of this sluice in that language would be predicted illicit by the fit condition. If it is indeed grammatical, we need to revise our analysis. 
+\noindent The problem here is that the case syncretism seems to be a mere accident working in the fit condition's favor. There may be a language where the case assigned by the preposition for, or the equivalent in the construction for monks in this monastery, is morphologically incompatible with the case assigned by the modal verb in which monks may sing. If so, the equivalent of this sluice in that language would be predicted illicit by the fit condition. If it is indeed grammatical, we need to revise our analysis. 
 
 To check if this could be the case , we examine Icelandic, a heavily case-marked language. Icelandic declines for number, gender, and case, of which there are four: nominative, accusative, dative, and genitive. Pronouns, specifiers, adjectives, nouns, and numbers one through four all decline. Verbs conjugate in person and number. Glossing specifies where case morphology is present, as well as number and gender where unclear from context. The definite article in Icelandic is postfix, and this has been indicated as well. There is no indefinite article in Icelandic. 
 
@@ -263,8 +265,10 @@ To check if this could be the case , we examine Icelandic, a heavily case-marked
 \ex\label{monksis1}
 \gll  \TH a{\dh} er \'i  grunninn h\ae gt fyrir munkana \'i klaustrinu a{\dh} syngja, en \'ab\'otinn ver\dh ur a{\dh} tilgreina \{hverjir \textbar hva\dh a munkar\} . \\ 
 It is in principle possible for monks.\textsc{acc.the}  in monastery.\textsc{dat.the}  to   sing         but  abbot.\textsc{nom.the} must    to  specify   which.\textsc{nom.pl.m} which.\textsc{nom.m} monks.\textsc{nom}.\\ 
-\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify which monks.'
+\trans `For monks in this monastery it's possible in principle to sing, but the abbot must specify which monks.'
 \end{exe}
+
+
 
 This example emulates the structure of the pre-sluice in (\ref{monks1}), but in Icelandic, ``monks'' takes accusative case in the antecedent, assigned by the preposition \textit{fyrir} (for), and at the pre-ellipsis site, monks is assigned nominative by the modal verb \textit{mega}. If the sluiced version is grammatical, this looks like a disaster waiting to happen for the fit condition, since to satisfy the fit condition we will be forced to fit a nominative remnant into a place meant for the accusative correlate. The sluiced version is indeed grammatical. 
 
@@ -272,7 +276,7 @@ This example emulates the structure of the pre-sluice in (\ref{monks1}), but in 
 \ex\label{monksis2}
 \gll \TH a{\dh} er \'i  grunninn h\ae gt fyrir munkana \'i klaustrinu a{\dh} syngja, en \'ab\'otinn ver\dh ur a{\dh} tilgreina hva\dh a munkar mega syngja. \\
 It is in principle possible for monks.\textsc{acc.the}  in monastery.\textsc{dat.the}  to   sing         but  abbot.\textsc{nom.the} must    to  specify   which.\textsc{nom.m} monks.\textsc{nom} may  sing.\\ 
-\trans `For monks in this monastery it?s possible in principle to sing, but the abbot must specify which monks may sing'
+\trans `For monks in this monastery it's possible in principle to sing, but the abbot must specify which monks may sing'
 \end{exe}
 
 Given this grammatical sluice, we can try fitting the remnant in the place of the correlate. 
@@ -300,6 +304,153 @@ Finiteness:
 \end{exe}
 
 Here, the antecedent possesses an agreement head that the ellipsis site does not. Instead, the verb at the ellipsis site is an infinitive. (\ref{cliochops2}) is pragmatically odd. We cannot assign agreement without copying the pronoun, but copying she into the ellipsis site makes it seem as if there is a second feminine referent, which is not intended and not recoverable from the sluiced version.  
+
+Tense: 
+\begin{exe}
+\ex\label{jess} 
+\begin{xlist}
+\ex \label{jess1}Jess's favorite plant is alive, but she can never be sure for how long \sout{\textless her favorite plant will be alive\textgreater}. 
+\ex[\#] {\label{jess2}Jess's favorite plant is alive, but she can never be sure for how long \sout{\textless her favorite plant is alive \textgreater .} }
+\end{xlist}
+\end{exe}
+
+This example is also pragmatically odd. The recoverable meaning from the sluice is that Jess does not know how long her favorite plant will be alive in the future. The idea that Jess does not know how long her favorite plant is currently alive is odd and unnatural. Based on this observation, the ellipsis site possesses a tense head that the antecedent does not have, again demonstrating a mismatch. 
+
+Modality: 
+\begin{exe}
+\ex\label{ana} 
+\begin{xlist}
+\ex \label{ana1}Ana knows there is always the potential for great things to happen, but she doesn?t know when \sout{\textless great things \{will, might\} happen\textgreater}. 
+\ex[*] {\label{ana2}Ana knows there is always the potential for great things to happen, but she doesn?t know when \sout{\textless great things to happen\textgreater}.}
+\ex[\#] {\label{ana3}Ana knows there is always the potential for great things to happen, but she doesn?t know when \sout{\textless great things happen\textgreater}.}
+\end{xlist}
+\end{exe}
+
+(\ref{ana2}) is ungrammatical, both acceptable versions of the ellipsis site as in (\ref{ana}) require either a modal verb or a tense head that is not present in the antecedent to sound at all natural. Even allowing the tense head to naturally fall out by agreement in (\ref{ana3}) leads to a pragmatically odd structure. 
+
+Given that many of these examples demonstrate pragmatic violations rather than syntactic ones, we may be tempted to identify the pragmatic oddness of some identical structures as the reason that we accept interpretations in the ellipsis site that mismatch the antecedents. Perhaps there is no structure at the ellipsis site, but instead listeners fill in whatever content is most pragmatically relevant. We have to remember Abels' analysis, which shows that a no-syntax account does not make correct predictions about what happens in Bulgarian. We have seen that there must be some deleted structure at the ellipsis site. However, Rudin's examples show that whatever this content is, it cannot be obligatorily identical to the antecedent. 
+
+Rudin, like Abels, argues against the full syntactic identity account. Rudin's data shows that there are constituents in the ellipsis site that are not present in the antecedent. He also uses these mismatches to make a case against the account of sluicing in which the antecedent and sluice must mutually entail each other, since a modal mismatch means that there can be no mutual entailment. Instead, Rudin argues, there is a syntactic identity requirement only at the level of the \textit{v}P. There is a difference between ``objective'' or ``event-introducing'' content within the TP, and content that is merely parasitic on another verb. Examples include modality and tense, which are heads that do not introduce a new notion or action into the verbal domain but instead modify what is already there. Rudin claims that the ``objective'' content contained within the highest event-introducing \textit{v}P must be isomorphic between antecedent and ellipsis site in order for sluicing to be licit, but that the requirement cannot be any higher along the clausal spine. This objective content within the \textit{v}P he dubs the ``eventive core''. He proposes the following semantic identity condition on sluicing. 
+
+\begin{exe} 
+\ex\label{rudinidcond}
+Given a prospective ellipsis site E and its antecedent A, non-pronunciation of the phonological content associated with any head h in E is licit if at least one of the following conditions holds
+\begin{xlist} 
+\ex \textit{h} did not originate within E?s eventive core
+\ex \textit{h} has a structure-matching correlate \textit{i} in A. 
+\end{xlist}
+\end{exe}
+
+Rudin?s argument hinges on the fact that acceptable examples with mismatches do not have mutual entailment on the entire TP, which is a strike against the older entailment-based semantic identity condition that acts on full TPs (most notably proposed by Merchant), since the modality- and tense-introducing heads are within the TP. 
+
+One ostensible problem for Rudin comes from the same set of sentences as the above alleged problem for Abels. 
+
+\begin{exe}
+\ex\label{f*ckingmonks} 
+\begin{xlist}
+\ex[*]{\label{f*ckingmonks1} In this monastery, it's possible in principle to sing, but the abbot has to specify which monks \textless can sing\textgreater.}
+\ex \label{f*ckingmonks2} In this monastery, it's possible in principle to sing, but the abbot has to specify which songs \sout{\textless to sing\textgreater}.
+\end{xlist}
+\end{exe}
+
+Rudin?s account incorrectly predicts (\ref{f*ckingmonks1}) to be grammatical. The eventive cores here match. At the ellipsis site can is adjoined above the \textit{v}P at the T head. Since the non-transitive version of sing is used in (\ref{f*ckingmonks2}), sing is the only component of the \textit{v}P with phonological content, and it is present and identical in both antecedent and ellipsis site. Non-pronunciation of can should therefore be licit, but this sluice is still ill-formed. Why? 
+
+Rudin acknowledges that his account incorrectly predicts (\ref{f*ckingmonks1}) to be grammatical, and argues that because rendering ``monks'' salient makes the sluice less degraded, the problem is not that the sluice is ungrammatical, but that it is pragmatically odd. 
+
+\begin{exe}
+\ex\label{f*ckingmonks3} In this monastery, it's possible in principle for monks to sing, but the abbot has to specify which monks \sout{\textless can sing\textgreater}.
+\end{exe}
+
+\begin{exe}
+\ex\label{f*ckingmonks4} For monks in this monastery, it's possible in principle to sing, but the abbot has to specify which monks \sout{\textless can sing\textgreater}.
+\end{exe} 
+
+\subsection{Kidwai: Case-(Mis)Matching in Urdu Sluicing}
+
+Kidwai (2018) uses Urdu data to advance the merits of the fit condition and to show that fit can account for phenomena that syntactic identity conditions cannot otherwise explain, particularly when it comes to mismatches. First, we should introduce some background on both the Urdu language and case mismatching in sluicing. 
+
+Kidwai identifies seven cases in Urdu, which are usually realized as post-nominal clitics. Urdu is usually said to have split ergativity, with ergative case appearing on subjects of transitive verbs and intransitive verbs in perfective form. But, as Kidwai notes has been pointed out in various literature, there are exceptions that lend themselves to the argument that Urdu might essentially follow a nominative-accusative case system, supplemented with an ergative case that is associated with various semantic factors (Butt 2017). For some verbs, in restricted environments, more than one case can be licitly used. Some of these cases lead to a different semantic interpretation of the content, and some lead to the same reading. 
+
+Kidwai's argument hinges primarily on the fact that there are four licit pairs of alternating cases that are permitted in some verbal environments.  The four pairs she addresses are:
+
+\begin{enumerate}[(a)]
+\item Ergative-Nominative 
+\item Ergative-Dative
+\item Nominative-Accusative
+\item Accusative-Instrumental
+\end{enumerate}
+For each of the pairs, Kidwai discusses the semantic contribution of case, as well as the acceptability of mismatched sluices. For (a) and (d), where the alternation has a semantic contribution, a mismatched sluice is unacceptable. This is predicted under Abels' analysis above, as he specifies that the syntactically well-formed structure must have the right meaning, although a truly robust account would have to be more specific. In any case, under (a), for example, retrieving the correct meaning with the fit test is not possible. 
+
+\begin{exe}
+\ex\label{someonecoughed1}
+\gll Koi khaansa tha lekin mujhe nazar nahi aaya \{kaun | *kis=ne \}\\
+Someone.\textsc{nom} coughed was but   I.\textsc{obl}.\textsc{dat} sight not come \{who.\textsc{nom} | *who.\textsc{obl}=\textsc{erg}\}
+\\
+\trans `For monks in this monastery it's possible in principle to sing, but the abbot must specify 
+which monks'
+\end{exe}
+
+Here, Kidwai's judgement is that the ergative case conveys the idea of the subject having control over the situation, with the nominative case indicating passiveness or lack of control. The alternating sluice also happens to be unacceptable. The non-sluiced version is grammatical (Kidwai, p.c.).
+
+\begin{exe}
+\ex\label{someonecoughed2}
+\gll Koi khaansa tha lekin mujhe nazar nahi aaya *kis=ne khaansa. \\
+Someone.\textsc{nom} coughed was but   I.\textsc{obl}.\textsc{dat} sight not come who.\textsc{obl}=\textsc{erg} coughed. \\
+\trans `Someone coughed [by accident] but I didn?t see who coughed [on purpose]' 
+\end{exe}
+
+Like nominative-ergative alternations, accusative-instrumental alternations carry with them semantic differences. Also like nominative-ergative alternations, accusative-instrumental alternations lead to ungrammatical sluices. Kidwai concludes that for case mismatches in Urdu sluicing, two conditions must be met. 
+
+\begin{exe}
+\ex\label{kidwaicond} 
+\begin{xlist}
+\ex The verb in the antecedent (and the sluice) licenses both the cases found on the correlate and the remnant. 
+\ex The case marking on the correlate and remnant has the same overall meaning. 
+\end{xlist}
+\end{exe}
+
+\subsubsection{Case mismatches in Icelandic} 
+The first fact causes problems for the no-syntax account of sluicing or ellipsis in general, since in many languages, Urdu included, there are synonymous verbs that are capable of assigning different cases to their objects or subjects, and thus license the use of both. However, in these languages the synonymous verb cannot be substituted in an ellipsis site. Take the following in Icelandic. (from Wood et al. 2018) 
+
+\begin{exe}
+\ex\label{mariadrove1}
+\gll \normalfont{A:} Mar\'ia \'ok b\'ilnum. \\
+{} Maria.\textsc{nom} drove car.the.\textsc{dat} \\
+\trans `Mary drove the car' 
+\gll \normalfont{B:}  \{*R\'utan | *R\'utuna | R\'utunni \} l\'ika. \\ 
+{} \{*coach.the.NOM | *coach.the.ACC | coach.the.DAT \} too. \\
+\trans `The coach too' 
+\end{exe}
+
+The verbs aka `drive' and keyra `drive' are in all respects synonymous, but license different cases. Aka un-controversially licenses dative case only. Some speakers judge \textit{keyra} to license accusative case, but even so, such speakers judge the following unacceptable.  
+
+\begin{exe}
+\ex\label{mariadrove2}
+\gll \normalfont{A:} Mar\'ia \'ok b\'ilnum. \\
+{} Maria.\textsc{nom} drove car.the.\textsc{dat} \\
+\trans `Mary drove the car' 
+\gll \normalfont{B:} *\sout{\textless H\'un keyr\dh i\textgreater} r\'utuna l\'ika. \\ 
+{} *\sout{\textless She drove\textgreater} coach.the.ACC  too. \\
+\trans `\sout{She drove} the coach too' 
+\end{exe}
+
+Nevertheless, Icelandic does permit mismatches in elliptical structures as long as the original verb licenses both cases.
+
+\begin{exe}
+\ex\label{mariadrove}
+\gll \normalfont{A:} Mig langar {a\dh} fara. \\
+{} Me.\textsc{acc} wants to go. \\
+\trans `I want to go' 
+\gll \normalfont{B:} \{*\'Eg | Mig | M\'er \} l\'ika. \\ 
+{} \{*I.\textsc{nom} | me.\textsc{acc} | me.\textsc{dat} \} too. \\
+\trans `Me too' 
+\end{exe}
+
+Here, both the accusative and dative versions of the personal pronoun '\'eg' are acceptable remnants, because in the originally sentence the two would have been equally acceptable correlates given the verb \textit{langa}.  Similar patterning arises in Urdu as well, where synonymous verbs that license different cases nevertheless cannot license case alternations in sluices if the verb in the antecedent does not also license that case alternation. This causes major problems for a no-syntax account of sluicing, since if the requirement on sluices is mutual entailment, synonyms should be substitutable without issue. 
+
+At the same time, Kidwai's introduces further problems for the syntactic identity condition. Since alternation is structurally licensed by the verb, it should be able to assign any case it licenses to the remnant. Based on the differing acceptability of mismatches in Urdu, we can see that this is not the case. If case mismatches are ever licensed, this seems to present a strong case that there is no way the structures in the ellipsis site and the antecedent are required to be identical. When presented next to Abels' evidence regarding licit P-stranding in Bulgarian sluices, the syntactic identity condition appears to have serious flaws, as does the no-syntax account. 
+
+
 
 %Great thoughts that further your argument. This includes lots of strong evidence presented throughout several paragraphs, each accompanied by necessary citations.
 %\begin{quotation}
